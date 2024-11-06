@@ -1,0 +1,182 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo Geral */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #d8cb7f;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #2d572c;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #ffd700; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seções */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+}
+
+/* Seção Home */
+section#home {
+  background-image: url('reciclagem.jpg');
+  background-size: cover;
+  color: #000000;
+  text-align: center;
+  padding: 4rem;
+}
+
+.recycle-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem auto;
+  display: block;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Seção Sobre */
+section#sobre {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+section#sobre img {
+  max-width: 100%;
+  height: auto;
+}
+
+section#sobre h2 {
+  color: #2d572c;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+section#sobre p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Seção Dicas e Tecnológicos */
+section#dicas, section#tecnologicos {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+section#dicas img, section#tecnologicos img {
+  max-width: 100%;
+  height: auto;
+}
+
+section#dicas h2, section#tecnologicos h2 {
+  color: #2d572c;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+section#dicas p, section#tecnologicos p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Botão Call-to-Action (CTA) */
+.cta-button {
+  background-color: #2d572c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #1e3b1e;
+}
+
+/* Formulário de Contato */
+form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #2d572c;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1e3b1e;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2d572c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+section#mapa {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.map-container iframe {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 480px;
+}
