@@ -25,10 +25,11 @@ header nav ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  flex-wrap: wrap; /* Permite que os itens se reorganizem em linhas, se necessário */
 }
 
 header nav ul li {
-  margin: 0 1rem;
+  margin: 0.5rem;
 }
 
 header nav ul li a {
@@ -37,7 +38,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #ffd700; /* Cor de destaque ao passar o mouse */
+  color: #ffd700;
 }
 
 /* Seções */
@@ -53,12 +54,13 @@ section#home {
   background-size: cover;
   color: #000000;
   text-align: center;
-  padding: 4rem;
+  padding: 4rem 2rem;
 }
 
 .recycle-image {
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
+  height: auto;
   margin: 1rem auto;
   display: block;
 }
@@ -68,59 +70,11 @@ h2 {
   font-size: 1.8rem;
 }
 
-/* Seção Sobre */
-section#sobre {
-  background-color: #f4f4f4;
-  padding: 2rem;
-  text-align: center;
-}
-
-section#sobre img {
-  max-width: 100%;
-  height: auto;
-}
-
-section#sobre h2 {
-  color: #2d572c;
-  font-size: 1.8rem;
-  margin-top: 1rem;
-}
-
-section#sobre p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Seção Dicas e Tecnológicos */
-section#dicas, section#tecnologicos {
-  background-color: #f4f4f4;
-  padding: 2rem;
-  text-align: center;
-}
-
-section#dicas img, section#tecnologicos img {
-  max-width: 100%;
-  height: auto;
-}
-
-section#dicas h2, section#tecnologicos h2 {
-  color: #2d572c;
-  font-size: 1.8rem;
-  margin-top: 1rem;
-}
-
-section#dicas p, section#tecnologicos p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Botão Call-to-Action (CTA) */
+/* Botão Call-to-Action */
 .cta-button {
   background-color: #2d572c;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.5rem;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -129,13 +83,14 @@ section#dicas p, section#tecnologicos p {
   background-color: #1e3b1e;
 }
 
-/* Formulário de Contato */
+/* Formulário */
 form label {
   display: block;
   margin: 0.5rem 0 0.2rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -164,19 +119,54 @@ footer {
   padding: 1rem;
 }
 
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
+/* Responsividade */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+
+  .recycle-image {
+    max-width: 100%;
+  }
 }
 
-section#mapa {
-  background-color: #ffffff;
-  text-align: center;
-}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
 
-.map-container iframe {
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  height: 480px;
+  header {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
 }
